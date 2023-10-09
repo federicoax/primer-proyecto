@@ -1,0 +1,430 @@
+/* Utilizando "box-sizing: border-box" en el selector universal *, es una buena práctica para evitar problemas de cálculo de tamaño debido a los bordes y el relleno. */
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+cabecera,
+section,
+footer,
+aside,
+nav,
+article,
+hgroup {
+    display: block;
+}
+
+body {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.agrupar {
+    width: 90%;
+    margin: auto;
+    background: none;
+    margin-top: 100px;
+}
+
+.cabecera {
+    padding: 20px;
+    margin: 15px auto;
+    width: auto;
+    height: 50%;
+}
+
+.cabecera h1 {
+    text-align: center;
+}
+
+.nav-logo {
+    width: 100px;
+    display: flex;
+}
+/* Cambiar el tamaño de la fuente en la barra de navegación */
+.navbar {
+    font-size: 28px;
+}
+
+/* Aplicar el color personalizado al botón buscar del navbar */
+.btn-outline-success {
+    background-color: #000000; /* Usar el color personalizado */
+    color: rgb(255, 255, 255); /* Cambiar el color del texto a blanco o el color que sea legible */
+}
+
+.barrasuperior ul {
+    list-style: none;
+    font: bold 30px verdana;
+    text-align: center;
+    display: flex;
+    margin-left: 20px;
+}
+
+.barrasuperior ul li {
+    padding: 15px;
+    text-align: center;
+    align-items: center;
+}
+
+.barrasuperior ul li a:hover {
+    border-bottom: 2px solid #ffffff;
+}
+
+.barrasocial {
+    position: fixed;
+    right: 0px;
+    top: 300px;
+    z-index: 2000;
+}
+
+.barrasocial ul {
+    list-style-type: none;
+}
+
+.barrasocial ul li a {
+    padding: 10px 15px;
+}
+
+.barrasocial ul li a:hover {
+    padding: 10px 30px;
+    display: inline-block;
+    padding: 10px 15px;
+    -webkit-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+
+.seccion {
+    padding: 20px;
+    margin: 15px auto;
+    width: auto;
+    height: 50%;
+}
+
+article img {
+    width: 700px;
+    display: block;
+    margin: 20px auto;
+}
+
+.span-or {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: -2px;
+    margin-left: -25px;
+    background-color: #fff;
+    width: 50px;
+    text-align: center;
+}
+
+.hr-or {
+    background-color: #cdcdcd;
+    height: 1px;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+footer.nb-footer {
+    background: #222;
+    border-top: 4px solid #b78c33;
+}
+
+footer.nb-footer .about {
+    margin: 0 auto;
+    margin-top: 40px;
+    max-width: 1170px;
+    text-align: center;
+}
+
+footer.nb-footer .about p {
+    font-size: 20px;
+    color: #999;
+    margin-top: 30px;
+}
+
+footer.nb-footer .about .social-media {
+    margin-top: 15px;
+}
+
+footer.nb-footer .about .social-media ul li a {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 50%;
+    font-size: 16px;
+    color: #b78c33;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+footer.nb-footer .about .social-media ul li a:hover {
+    background: #b78c33;
+    color: #fff;
+    border-color: #b78c33;
+}
+
+
+footer.nb-footer .footer-info-single {
+    margin-top: 30px;
+}
+
+footer.nb-footer .footer-info-single .title {
+    color: #aaa;
+    text-transform: uppercase;
+    font-size: 16px;
+    border-left: 4px solid #b78c33;
+    padding-left: 5px;
+}
+
+footer.nb-footer .footer-info-single ul li a {
+    display: block;
+    color: #aaa;
+    padding: 2px 0;
+}
+
+footer.nb-footer .footer-info-single ul li a:hover {
+    color: #b78c33;
+}
+
+footer.nb-footer .footer-info-single p {
+    font-size: 16px;
+    line-height: 20px;
+    color: #aaa;
+}
+
+footer.nb-footer .copyright {
+    margin-top: 15px;
+    background: #111;
+    padding: 7px 0;
+    color: #999;
+    margin: 0 auto;
+}
+
+footer.nb-footer .copyright p {
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+}
+
+footer.nb-footer .copyright .container .row .col-sm-6 {
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+}
+.fondo {    
+    background-image: url("../img/fondo.jpg");
+    background-size: cover; /* Ajusta el tamaño de la imagen al tamaño del cuerpo */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    background-attachment: fixed; /* Fija el fondo en su posición */
+}
+
+
+/* Estilo del logeo de sesión */
+.container_inicio {
+    max-width: 400px; /* Establece el ancho máximo del contenedor en 400 píxeles */
+    margin: 50px auto; /* Agrega margen en la parte superior e inferior, y calcula automáticamente el margen izquierdo y derecho para centrar el contenedor horizontalmente */
+    padding: 20px; /* Agrega un relleno interno de 20 píxeles alrededor del contenido del contenedor */
+    background-color: #f9f9f9; /* Establece el color de fondo del contenedor*/
+    border-radius: 5px; /* Agrega un radio de borde de 5 píxeles para redondear las esquinas del contenedor */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Agrega una sombra al contenedor con un desplazamiento de 0 en los ejes X e Y, un radio de difuminado de 5 píxeles y un color de sombra semi-transparente (negro) */
+}
+
+h2 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Alinea el texto y el margen del ¿Aun no se registró del formulario del logeo */
+.register-link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* CSS para mejorar el diseño responsive en dispositivos móviles */
+
+/* Establecer un tamaño mínimo de fuente para dispositivos pequeños */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .cabecera h1 {
+        font-size: 24px;
+    }
+
+    .cabecera p {
+        font-size: 16px;
+    }
+
+    /* Ajustar el tamaño de las imágenes del carrusel para dispositivos pequeños */
+    .carousel-inner img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Alinear el texto al centro en dispositivos pequeños */
+    .seccion h1 {
+        text-align: center;
+    }
+}
+
+/* Estilo para la barra de navegación en dispositivos pequeños */
+@media screen and (max-width: 768px) {
+    /* Asegurar que el logo sea visible en dispositivos pequeños */
+    .navbar-brand img {
+        max-height: auto;
+    }
+}
+
+/* Estilo para la barra social en dispositivos pequeños */
+@media screen and (max-width: 768px) {
+    .barrasocial {
+        top: auto;
+        bottom: 0;
+    }
+}
+
+/* Estilo para el formulario de inicio de sesión en dispositivos pequeños */
+@media screen and (max-width: 768px) {
+    .container_inicio {
+        max-width: 100%;
+    }
+}
+/* Ajustar el tamaño de las imágenes en la sección para dispositivos pequeños */
+@media screen and (max-width: 768px) {
+    article img {
+        width: 100%; /* Hace que la imagen ocupe el ancho completo del contenedor */
+        height: auto; /* Mantiene la relación de aspecto original */
+        max-width: 100%; /* Evita que la imagen se desborde del contenedor */
+        margin: 10px 0; /* Agrega espacio vertical alrededor de la imagen */
+    }
+}
+/* Ajustar el tamaño de la imagen en el footer para dispositivos pequeños */
+@media screen and (max-width: 768px) {
+    footer.nb-footer .about img.img-responsive {
+        max-width: 100%;
+        height: auto;
+    }    
+}
+/* Estilo para la barra social en dispositivos pequeños */
+@media screen and (max-width: 768px) {
+    .barrasocial {
+        position: fixed;
+        bottom: 30%; /* Coloca la barra social en el centro vertical de la pantalla */
+        right: 0.5px; /* Ajusta la distancia desde la derecha según tu preferencia */
+        transform: translateY(-5%); /* Corrige la posición vertical para que esté centrada */
+        display: flex;
+        flex-direction: column; /* Alinea los íconos verticalmente */
+        align-items: flex-end; /* Alinea los íconos a la derecha */
+    }
+
+    .barrasocial ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .barrasocial ul li {
+        margin-bottom: 10px; /* Espacio entre los íconos */
+    }
+
+    .barrasocial ul li a img {
+        width: 35px; /* Ajusta el tamaño de los íconos en dispositivos pequeños */
+    }
+}
+/* Estilo de fondo para el formulario de registro*/
+.container_registro {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    margin: 50px auto;
+}
+
+/* Estilo de los campos de entrada para el formulario registro */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    transition: border-color 0.2s;
+}
+
+.form-control:focus {
+    border-color: #007bff; /* Cambia el color del borde al enfocar */
+}
+
+/* Estilo del botón de registro */
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Cambia el color al pasar el mouse para el formulario registro y logeo */
+}
+
+/* Estilo del botón cancelar */
+.btn-secondary.cancel {
+    background-color: #ccc;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.2s; /* Agrega una transición para el cambio de color de fondo */    
+}
+
+.btn-secondary.cancel:hover {
+    background-color: #aaa; /* Cambia el color al pasar el mouse para el formulario registro y logeo */
+}
+
+
+/* Consulta de medios para dispositivos móviles */
+@media (max-width: 768px) {
+    /* Reducir el tamaño del formulario y centrarlo en dispositivos móviles */
+    .container_registro {
+        padding: 10px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Ajustar el tamaño de los campos de entrada y el botón en dispositivos móviles */
+    .container_registro .btn-primary {
+        font-size: 14px;
+        padding: 8px;
+        max-width: 100%;
+        height: auto;
+    }  
+}
+
+/* Cambia el color del texto del botón en la barra de navegación */
+.btnUser a {
+    color: #ffffff; /* Cambia el color del texto a blanco */
+}
